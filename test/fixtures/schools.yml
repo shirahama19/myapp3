@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  category: MyString
+  place_ward: MyString
+  place_address: MyString
+  station: MyString
+  day_of_week: MyString
+  fee: 1
+
+two:
+  name: MyString
+  category: MyString
+  place_ward: MyString
+  place_address: MyString
+  station: MyString
+  day_of_week: MyString
+  fee: 1

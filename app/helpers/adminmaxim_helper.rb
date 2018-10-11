@@ -1,0 +1,2 @@
+module AdminmaximHelper
+end

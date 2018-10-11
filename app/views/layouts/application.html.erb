@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Myapp3</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= link_to("管理画面トップ", "/admin") %>
+    <%= link_to("記事一覧", "/admin/articles") %>
+    <%= link_to("記事新規作成", "/admin/articles/new") %>
+    <%= link_to("ことば一覧", "/admin/maxims") %>
+    <%= link_to("ことば新規作成", "/admin/maxims/new") %>
+    <%= link_to("展示会一覧", "/admin/exhibitions") %>
+    <%= link_to("展示会新規作成", "/admin/exhibitions/new") %>
+    <%= link_to("教室一覧", "/admin/schools") %>
+    <%= link_to("教室新規作成", "/admin/schools/new") %>
+
+    <%= yield %>
+  </body>
+</html>
