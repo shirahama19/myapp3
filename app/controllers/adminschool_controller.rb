@@ -6,4 +6,7 @@ class AdminschoolController < ApplicationController
 
   end
 
+  def show
+
+  end
 end

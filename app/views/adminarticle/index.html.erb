@@ -1,3 +1,13 @@
-<p>
-  konnnichiha
-</p>
+<div>
+  <% @articles.each do |article| %>
+  <div>
+
+    <%= article.title %>
+    <%= article.category %>
+    <%= article.content %>
+    <%= article.created_at %>
+    <%= link_to("詳細","/admin/articles/#{article.id}") %>
+  </div>
+
+  <% end %>
+</div>

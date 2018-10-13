@@ -1,0 +1,41 @@
+<div>
+  <p>
+    タイトル：
+  </p>
+  <%= @article.title %>
+</div>
+
+<div>
+  <p>
+    カテゴリ：
+  </p>
+  <%= @article.category %>
+</div>
+
+<div>
+  <p>
+    内容：
+  </p>
+  <%= @article.content %>
+</div>
+
+<div>
+  <p>
+    作成日時：
+  </p>
+  <%= @article.created_at %>
+</div>
+
+<div>
+  <p>
+    作成者：
+  </p>
+
+</div>
+
+<div>
+  <%= link_to("編集","/admin/articles/#{@article.id}/edit") %>
+  <%= link_to("削除","/admin/articles/#{@article.id}/destroy",{method:"post"}) %>
+  <%= link_to("一覧に戻る","/admin/articles") %>
+
+</div>

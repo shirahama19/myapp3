@@ -1,0 +1,25 @@
+
+<h2>記事編集</h2>
+
+<%= form_for(@article, url: admin_articles_update_path ) do |f| %>
+
+<div>
+<%= f.label :タイトル %>
+<%= f.text_field :title %>
+</div>
+
+<div>
+<%= f.label :カテゴリ %>
+<%= f.select :category, [["a","a"],["b","b"]] %>
+</div>
+
+<div>
+<%= f.label :内容 %>
+<%= f.text_area :content %>
+</div>
+
+<div>
+<%= f.submit "記事編集" %>
+</div>
+
+<% end %>

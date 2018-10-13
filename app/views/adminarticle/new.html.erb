@@ -1,4 +1,26 @@
 
-<p>
-  記事を作るよ
-</p>
+<div>
+  <h2>新規記事作成フォーム</h2>
+</div>
+
+<%= form_for(@article, url: admin_articles_create_path) do |f| %>
+  <div>
+  <%= f.label :タイトル %>
+  <%= f.text_field :title %>
+  </div>
+
+  <div>
+  <%= f.label :カテゴリ %>
+  <%= f.select :category, [["a","a"],["b","b"]] %>
+  </div>
+
+  <div>
+  <%= f.label :内容 %>
+  <%= f.text_area :content %>
+  </div>
+
+  <div>
+  <%= f.submit "記事作成" %>
+  </div>
+
+<% end %>
